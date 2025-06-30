@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+        background-color: #f7f7f7;
+}
+#page1{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 0 1vw;
+    padding-top: 20vh;
+
+}
+#page1 h1{
+    font-size: 15.8vw;
+    text-transform: uppercase;
+    font-family: futura;
+    line-height: 14vw;
+    letter-spacing: -8px;
+}
+#video{
+    height: 100vh;
+    width: 100%;
+    margin-top: 1vw;
+    position: relative;
+}
+#video video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#video #play{
+    color: white;
+    font-size: 1.5vw;
+    font-family: futura;
+    background: black;
+    padding: 3vw 2vw;
+    position: fixed;
+    border-radius: 50%;
+    opacity: 0;
+    scale: 0;
+}
+*::selection{
+    color: #fff;
+    background-color: black;
+}
+#page2{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw 1vw;
+}
+#page2 .elem{
+    height: 100%;
+    width: 32%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+.bar{
+    width: 98%;
+    border: 1px solid #333;
+    margin: 3vw 1vw  ;
+}
+#page2 .elem img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+    scale: 1.1;
+}
+
+#page2 .elem .box{
+    
+    position: absolute;
+}
+#page2 .elem .box{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    z-index: 9;
+    background-color: #f7f7f7;
+    border-radius: 50%;
+    transition:height 0.3s ease;
+    overflow: hidden;
+    display: flex;
+    font-size: 3vw;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+}
+.box:hover{
+    cursor: pointer;
+}
+
+
+#page3{
+    height: 180vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: #f7f7f7;
+}
+.child{
+    height: 58vh;
+    width: 44vw;
+    
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+.price{
+    text-align: center;
+}
+.child img{
+    height: 100%;
+    
+    
+}
+#cursor{
+    height: 150px;
+    width: 150px;
+    position: fixed;
+    border-radius: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    background-color: coral;
+    z-index: 10;
+}
+.nav{
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    padding: 25px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.nav .nav2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.links{
+    padding: 10px;
+}
+.nav2 .links a{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+    /* font-family: futura; */
+    margin: 0 20px;
+}
+.icons{
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #f7f7f7 ;
+}
+.nav .icons i{
+    font-size: 18px;
+    margin: 0 20px;
+    font-weight: 100;
+}
+.nav1{
+    height: 82px;
+    overflow: hidden;
+}
+.nav1 svg{
+    display: block;
+}
+.radio{
+ display: flex;
+    justify-content: space-evenly;
+}
+.radio .buttons{
+    height: 100px;
+    width: 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5vw;
+    font-weight: 500;
+    accent-color: black;
+}
+#page4{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#page4 h1{
+    margin-top: -5vh;
+    font-family: futura;
+    font-size: 5vw;
+    width: 70vw;
+    text-align: center;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+#page4 .head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+#page4 .send{
+    width: 18vw;
+    padding: 1.3vw;
+    align-items: center;
+    border-radius: 2vw;
+    justify-content: center;
+    display: flex;
+  color: #fff;
+  margin-top: 10vh;
+    background-color: black;
+}
+#page4 .h3{
+    width: 18vw;
+    text-align: center;
+    margin-top: 5vh;
+}
+#page5{
+        padding: 3vw 1vw;
+}
+#page5 input{
+    height: 5vw;
+    width: 100%;
+    color: black;
+    font-size: 2.5vw;
+    font-family: futura;
+    border: none;
+    border-bottom: 2px solid #333;
+    padding: 3vw 1vw;
+    outline: none;
+    background-color: #f7f7f7;
+}
+.footer{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.f{
+    display: flex;
+    flex-direction: column;
+}
+.f span{
+    color: #333;
+    margin-bottom: 1vw;
+}
+
+.f a{
+    font-size: 1.2vw;
+    color: black;
+    text-decoration: none;
+}
+.f2 svg{
+    width: 90vh;
+}
+#f3  {
+    text-align: right;
+}
+.foot{
+    transform: translateY(-10vh);
+    margin-left: 15vw;
+    margin-bottom: 5vh;
+    align-self: center;
+    width: 70%;
+    text-align: center;
+}
